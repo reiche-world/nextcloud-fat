@@ -5,6 +5,16 @@ Maybe more tools in the future.
 
 ## Configuration
 
+### Helm chart
+
+```yaml
+nextcloud:
+  image:
+    registry: ghcr.io
+    repository: reiche-world/nextcloud-fat
+    tag: "32"
+```
+
 ### Recognize
 
 - Set *nice* to `/bin/nice`
