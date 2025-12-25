@@ -17,8 +17,9 @@ nextcloud:
 
 ### Recognize
 
-- Set *nice*: `occ config:app:set recognize.nice_binary --value="/bin/nice"`
-- Set *NodeJS*: `occ config:app:set recognize.node_binary --value="/usr/bin/node"` 
+- Set *nice*: `occ config:app:set recognize nice_binary --value="/bin/nice"`
+- Set *NodeJS*: `occ config:app:set recognize node_binary --value="/usr/bin/node"`
+- Enable *WASM*: `occ config:app:set recognize tensorflow.purejs --value='true'`
 
 ### Memories
 
