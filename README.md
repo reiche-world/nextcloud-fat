@@ -17,5 +17,9 @@ nextcloud:
 
 ### Recognize
 
-- Set *nice* to `/bin/nice`
-- Set *NodeJS* to `/usr/bin/node`
+- Set *nice*: `occ config:app:set recognize.nice_binary --value="/bin/nice"`
+- Set *NodeJS*: `occ config:app:set recognize.node_binary --value="/usr/bin/node"` 
+
+### Memories
+
+- Set *exif-tool* to musl: `occ config:system:set memories.exiftool --value="/var/www/html/custom_apps/memories/bin-ext/exiftool-amd64-musl"`

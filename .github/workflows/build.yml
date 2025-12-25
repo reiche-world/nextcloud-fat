@@ -6,8 +6,12 @@ env:
 
 on:
   push:
+    paths:
+      - "Dockerfile"
     branches: [ "main" ]
   pull_request:
+    paths:
+      - "Dockerfile"
     branches: [ "main" ]
   workflow_dispatch:
   release:
