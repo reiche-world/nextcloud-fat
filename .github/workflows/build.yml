@@ -31,7 +31,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: reiche-world/actions/build-container@feature/build-args
+      - uses: reiche-world/actions/build-container@main
         with:
           user: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
