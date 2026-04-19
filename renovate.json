@@ -1,0 +1,21 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":rebaseStalePrs",
+    "docker:pinDigests"
+  ],
+  "labels": ["dependencies", "docker"],
+  "assignees": [],
+  "packageRules": [
+    {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["nextcloud"],
+      "versioning": "docker"
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "labels": ["github-actions"]
+    }
+  ]
+}
