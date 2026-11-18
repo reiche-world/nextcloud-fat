@@ -13,7 +13,8 @@
         "ARG\\s+SOURCE_VERSION=(?<currentValue>[^\\s]+)"
       ],
       "depNameTemplate": "docker.io/library/nextcloud",
-      "datasourceTemplate": "docker"
+      "datasourceTemplate": "docker",
+      "versioningTemplate": "docker"
     }
   ]
 }
